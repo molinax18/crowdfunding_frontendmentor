@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-color: black;
+  padding: 1rem;
+}
+
+/* Nav desktop */
+.navDesktop {
+  display: none;
+}
+
+.navDesktopContent {
+  display: flex;
+  gap: 2rem;
+
+  & a {
+    color: var(--dark-gray);
+  }
+}
+
+/* Nav mobile */
+.navMobileContentWrapper {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, .5);
+}
+
+.navMobileContent {
+  position: relative;
+  top: 4.5rem;
+
+  background-color: white;
+  border-radius: .5rem;
+
+  & li {
+    list-style: none;
+    padding: 1.2rem;
+  }
+
+  & li:not(:last-child) {
+    border-bottom: 1px solid gainsboro;
+  }
+
+  & a {
+    color: var(--black);
+    font-weight: 600;
+  }
+}
+
+@media (width > 640px) {
+  .header {
+    padding: 1.5rem 3rem;
+  }
+  
+  .navMobile {
+    display: none;
+  }
+
+  .navDesktop {
+    display: flex;
+  }
+}
+
+@media (width > 1024px) {
+  .header {
+    padding: 2rem 6rem;
+  }
+}

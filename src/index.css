@@ -13,3 +13,13 @@
   box-sizing: border-box;
   font-family: "Commissioner", serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 93%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
