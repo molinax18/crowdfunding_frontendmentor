@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 /* Nav desktop */
@@ -22,7 +22,7 @@
 }
 
 .navDesktopContent a {
-  color: var(--dark-gray);
+  color: white;
 }
 
 /* Nav mobile */
@@ -47,7 +47,7 @@
 }
 
 .navMobileContent li:not(:last-child) {
-  border-bottom: 1px solid gainsboro;
+  border-bottom: 1px solid var(--light-gray);
 }
 
 .navMobileContent a {
@@ -55,7 +55,7 @@
   font-weight: 600;
 }
 
-@media (width > 640px) {
+@media (width >= 640px) {
   .header {
     padding: 1.5rem 3rem;
   }
@@ -69,7 +69,7 @@
   }
 }
 
-@media (width > 1024px) {
+@media (width >= 1024px) {
   .header {
     padding: 2rem 6rem;
   }

@@ -1,0 +1,61 @@
+.support {
+  position: relative;
+  
+  display: grid;
+  gap: 1.5rem;
+  
+  text-align: center;
+  margin-top: -4rem;
+}
+
+.support header {
+  display: grid;
+  place-items: center;
+}
+
+.support header h2 {
+  margin-top: 1rem;
+}
+
+.masterCraftLogo {
+  position: absolute;
+  top: -1.6rem;
+}
+
+.supportFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookmarkContainer {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  transition: opacity .1s ease-out;
+}
+
+.bookmarkContainer svg {
+  z-index: 1;
+}
+
+.bookmarkContainer span {
+  display: none;
+  background-color: var(--light-gray);
+  padding: 1rem;
+  padding-left: 2rem;
+  border-radius: 0 2rem 2rem 0;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-left: -1.5rem;
+}
+
+.bookmarkContainer:hover, .bookmarkContainer:focus {
+  opacity: .8;
+}
+
+@media (width >= 640px) {
+  .bookmarkContainer span {
+    display: block;
+  }
+}

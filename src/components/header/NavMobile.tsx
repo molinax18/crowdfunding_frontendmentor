@@ -1,5 +1,5 @@
-import CloseMenuIcon from '../icons/CloseMenuIcon'
-import HamburgerIcon from '../icons/HamburgerIcon'
+import CloseMenuIcon from '../ui/icons/CloseMenuIcon'
+import HamburgerIcon from '../ui/icons/HamburgerIcon'
 import style from '../styles/Header.module.css'
 
 interface Props {

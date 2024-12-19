@@ -4,7 +4,8 @@
   --moderate-cyan: hsl(176, 50%, 47%);
   --dark-cyan: hsl(176, 72%, 28%);
   --black: hsl(0, 0%, 0%);
-  --dark-gray: gainsboro;
+  --dark-gray: hsl(0, 0%, 48%);
+  --light-gray: gainsboro;
 }
 
 * {
@@ -23,7 +24,30 @@ a {
 }
 
 .container {
-  width: 93%;
+  width: 90%;
   max-width: 1200px;
   margin-inline: auto;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: .5rem;
+  border: 1px solid var(--light-gray);
+  padding: 2rem;
+}
+
+.content-container {
+  width: 90%;
+  max-width: 650px;
+  margin-inline: auto;
+}
+
+.paragraph {
+  color: var(--dark-gray);
+  line-height: 1.5;
 }
