@@ -1,5 +1,6 @@
 import Header from './components/header'
 import Hero from './components/hero'
+import Progress from './components/progress'
 import Support from './components/support'
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
 
         <div className='content-container'>
           <Support />
+          <Progress />
         </div>
       </main>
     </>

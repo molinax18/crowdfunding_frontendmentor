@@ -42,6 +42,9 @@ a {
 }
 
 .content-container {
+  display: grid;
+  gap: 2rem;
+  
   width: 90%;
   max-width: 650px;
   margin-inline: auto;
