@@ -11,9 +11,9 @@ interface Props {
 }
 
 const initialState: Summary = {
-  currentSummary: 89914,
-  goal: 100000,
-  currentBackers: 5007,
+  currentSummary: 89.914,
+  goal: 100.000,
+  currentBackers: 5.007,
   daysLeft: 56
 }
 
