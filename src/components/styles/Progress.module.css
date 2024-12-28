@@ -1,17 +1,18 @@
 .support {
   display: grid;
-  gap: 1.2rem;
+  gap: 1.4rem;
   place-items: center;
 
   text-align: center;
 }
 
-.support article {
+.support div, .support article {
   display: grid;
-  gap: .5rem;
+  place-items: center;
+  gap: 1rem;
 }
 
-.support article:not(:last-child) {
+.support div article:not(:last-child) {
   width: max-content;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--light-gray);
@@ -25,4 +26,32 @@
 .support span {
   color: var(--dark-gray);
   font-size: .85rem;
+}
+
+.support progress {
+  width: 100%;
+  grid-column: 1 / -1;
+  margin-top: 2rem;
+}
+
+@media (width >= 768px) {
+  .support {
+    gap: .5rem;
+  }
+  
+  .support div {
+    grid-template-columns: repeat(3, 1fr);
+    place-items: start;
+  }
+
+  .support div article:not(:last-child) {
+    width: 100%;
+    padding: 0 2rem 0 0;
+    border-bottom: none;
+    border-right: 1px solid var(--light-gray);
+  }
+
+  .support div article:last-child {
+    padding-left: 2rem;
+  }
 }

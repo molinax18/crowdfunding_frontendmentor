@@ -1,0 +1,16 @@
+.progressLine {
+  appearance: none;
+}
+
+.progressLine::-webkit-progress-bar {
+  overflow: hidden;
+  border-radius: 1rem;
+  height: 13px;
+  background-color: var(--light-gray);
+}
+
+.progressLine::-webkit-progress-value {
+  border-radius: inherit;
+  background-color: var(--moderate-cyan);
+}
+
