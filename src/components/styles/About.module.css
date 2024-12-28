@@ -1,0 +1,4 @@
+.about, .about > header, .aboutHeaderContainer, .about div {
+  display: grid;
+  gap: 1rem;
+}

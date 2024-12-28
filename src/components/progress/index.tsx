@@ -16,15 +16,18 @@ const Progress = () => {
           <strong>${currentSummary.toLocaleString('es-ES')}</strong>
           <span>of ${goal.toLocaleString('es-ES')} backed</span>
         </article>
+
         <article>
           <strong>{currentBackers.toLocaleString('es-ES')}</strong>
           <span>total backers</span>
         </article>
+
         <article>
           <strong>{daysLeft.toLocaleString('es-ES')}</strong>
           <span>days left</span>
         </article>
       </div>
+
       <ProgressLine
         maxVal={goal}
         minVal={currentSummary}

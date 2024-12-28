@@ -1,0 +1,31 @@
+.rewardContainer {
+  display: grid;
+  gap: 1rem;
+
+  font-size: .9rem;
+}
+
+.rewardContainer header, .rewardContainer footer {
+  display: grid;
+  gap: .5rem;
+}
+
+.rewardContainer header span {
+  font-size: .85rem;
+  color: var(--moderate-cyan);
+  font-weight: 500;
+}
+
+.rewardContainer footer strong {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+
+  font-size: 2rem;
+}
+
+.rewardContainer footer strong span {
+  font-size: .85rem;
+  color: var(--dark-gray);
+  font-weight: normal;
+}
