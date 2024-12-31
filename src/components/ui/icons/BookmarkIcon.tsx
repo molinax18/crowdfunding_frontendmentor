@@ -1,25 +1,30 @@
+import style from '../../styles/BookmarkIcon.module.css'
+
 interface Props {
-  onClick?: () => void
+  marked: boolean
 }
 
-const BookmarkIcon = ({ onClick }: Props) => {
+const BookmarkIcon = ({ marked }: Props) => {
+  const { bookmarkIcon, bmIconMarked } = style
+
   return (
     <svg
       width='56'
       height='56'
+      className={`${bookmarkIcon} ${marked ? bmIconMarked : ''}`}
     >
       <g
-        fill='none'
+        fill='currentColor'
         fillRule='evenodd'
       >
         <circle
-          fill='#2F2F2F'
+          fill='currentColor'
           cx='28'
           cy='28'
           r='28'
         />
         <path
-          fill='#B1B1B1'
+          fill='currentColor'
           d='M23 19v18l5-5.058L33 37V19z'
         />
       </g>

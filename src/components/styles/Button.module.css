@@ -1,7 +1,9 @@
+.buttonDisabled {
+  background-color: var(--dark-gray);
+}
+
 .button {
   color: white;
-  cursor: pointer;
-  background-color: var(--moderate-cyan);
   font-size: 1rem;
   font-weight: 600;
   border-radius: 2rem;
@@ -10,6 +12,11 @@
   transition: background-color .1s ease-out;
 }
 
-.button:hover, button:focus {
+.button:not(.buttonDisabled) {
+  background-color: var(--moderate-cyan);
+}
+
+.button:not(.buttonDisabled):hover, button:focus {
+  cursor: pointer;
   background-color: var(--dark-cyan);
 }

@@ -5,7 +5,7 @@
   gap: 1.5rem;
   
   text-align: center;
-  margin-top: -4rem;
+  margin-top: -5rem;
 }
 
 .support header {
@@ -46,12 +46,16 @@
   padding-left: 2rem;
   border-radius: 0 2rem 2rem 0;
   font-weight: 600;
-  color: var(--dark-gray);
+  color: var(--bm-txt-color);
   margin-left: -1.5rem;
 }
 
 .bookmarkContainer:hover, .bookmarkContainer:focus {
   opacity: .8;
+}
+
+.bmMarked {
+  color: var(--dark-cyan);
 }
 
 @media (width >= 640px) {

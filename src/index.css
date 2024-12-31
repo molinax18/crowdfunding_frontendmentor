@@ -48,6 +48,7 @@ a {
   width: 90%;
   max-width: 650px;
   margin-inline: auto;
+  padding: 1rem 0;
 }
 
 .paragraph {

@@ -8,9 +8,13 @@ interface Props {
 
 const Reward = ({ reward }: Props) => {
   const { name, pledge, description, amount } = reward
+  const { rewardContainer, rewardDisabled } = style
+  const hasDisabled = amount === 0
 
   return (
-    <article className={`card ${style.rewardContainer}`}>
+    <article
+      className={`card ${rewardContainer} ${hasDisabled ? rewardDisabled : ''}`}
+    >
       <header>
         <h3>{name}</h3>
         <span>Pledge ${pledge} or more</span>
@@ -23,7 +27,7 @@ const Reward = ({ reward }: Props) => {
           {amount}
           <span>left</span>
         </strong>
-        <Button>Select Reward</Button>
+        <Button disabled={hasDisabled}>Select Reward</Button>
       </footer>
     </article>
   )

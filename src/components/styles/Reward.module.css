@@ -29,3 +29,19 @@
   color: var(--dark-gray);
   font-weight: normal;
 }
+
+.rewardDisabled {
+  opacity: .5;
+}
+
+@media (width >= 640px) {
+  .rewardContainer {
+    gap: 1.5rem;
+  }
+  
+  .rewardContainer header, .rewardContainer footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,16 @@
+.bmIconMarked g {
+  color: var(--dark-cyan);
+}
+
+.bmIconMarked path {
+  color: white;
+}
+
+.bookmarkIcon:not(.bmIconMarked) circle {
+  color: #2F2F2F;
+}
+
+.bookmarkIcon:not(.bmIconMarked) path {
+  color: #B1B1B1;
+}
+
